@@ -1,0 +1,741 @@
+{
+    "scan_name": "tests",
+    "projects": [
+        {
+            "artifact_id": "tests/test_data/package.json5",
+            "group_id": "",
+            "version": "",
+            "dependencies": [
+                {
+                    "artifact_id": "acme-widgets",
+                    "version": "^1.4.3",
+                    "version_op": null,
+                    "extractor_type": "dds",
+                    "context": "tests/test_data/package.json5",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "acme-gizmos",
+                    "version": "~5.6.5",
+                    "version_op": null,
+                    "extractor_type": "dds",
+                    "context": "tests/test_data/package.json5",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "acme-utils",
+                    "version": "^3.3.0",
+                    "version_op": null,
+                    "extractor_type": "dds",
+                    "context": "tests/test_data/package.json5",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                }
+            ],
+            "package_manager": {
+                "package_manager": "dds",
+                "language": "c",
+                "working_dir": "",
+                "running_mode": ""
+            },
+            "type": "user_module"
+        },
+        {
+            "artifact_id": "tests/test_data/xmake.lua",
+            "group_id": "",
+            "version": "",
+            "dependencies": [
+                {
+                    "artifact_id": "cxxopts",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "xmake",
+                    "context": "cxxopts",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "concurrentqueue",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "xmake",
+                    "context": "concurrentqueue",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "hopscotch-map",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "xmake",
+                    "context": "hopscotch-map",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "nlohmann_json",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "xmake",
+                    "context": "nlohmann_json",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "tl_expected",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "xmake",
+                    "context": "tl_expected",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "tl_function_ref",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "xmake",
+                    "context": "tl_function_ref",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "fmt",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "xmake",
+                    "context": "fmt",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "curl",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "xmake",
+                    "context": "libcurl",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "nazaraengine",
+                    "version": "2021.08.28",
+                    "version_op": null,
+                    "extractor_type": "xmake",
+                    "context": "nazaraengine 2021.08.28",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "nazaraengine~server",
+                    "version": "2021.08.28",
+                    "version_op": null,
+                    "extractor_type": "xmake",
+                    "context": "nazaraengine~server 2021.08.28",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "sol2",
+                    "version": "v3.2.1",
+                    "version_op": null,
+                    "extractor_type": "xmake",
+                    "context": "sol2 v3.2.1",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "stackwalker",
+                    "version": "master",
+                    "version_op": null,
+                    "extractor_type": "xmake",
+                    "context": "stackwalker master",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                }
+            ],
+            "package_manager": {
+                "package_manager": "xmake",
+                "language": "c",
+                "working_dir": "",
+                "running_mode": ""
+            },
+            "type": "user_module"
+        },
+        {
+            "artifact_id": "tests/test_data/cpm.cmake",
+            "group_id": "",
+            "version": "",
+            "dependencies": [
+                {
+                    "artifact_id": "catch2",
+                    "version": "2.5.0",
+                    "version_op": null,
+                    "extractor_type": "cmake::cpm",
+                    "context": "cpmaddpackage(\"gh:catchorg/catch2@2.5.0\")",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "range-v3",
+                    "version": "0.11.0",
+                    "version_op": null,
+                    "extractor_type": "cmake::cpm",
+                    "context": "cpmaddpackage(\"gh:ericniebler/range-v3#0.11.0\")",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "yaml-cpp",
+                    "version": "0.6.3",
+                    "version_op": null,
+                    "extractor_type": "cmake::cpm",
+                    "context": "cpmaddpackage(\"gh:jbeder/yaml-cpp#yaml-cpp-0.6.3@0.6.3\")",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "json",
+                    "version": "3.9.1",
+                    "version_op": null,
+                    "extractor_type": "cmake::cpm",
+                    "context": "cpmaddpackage(\n  name nlohmann_json\n  version 3.9.1\n  github_repository nlohmann/json\n  options \n    \"json_buildtests off\"\n)",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "boost",
+                    "version": "1.77.0",
+                    "version_op": null,
+                    "extractor_type": "cmake::cpm",
+                    "context": "cpmaddpackage(\n  name boost\n  version 1.77.0\n  github_repository \"boostorg/boost\"\n  git_tag \"boost-1.77.0\"\n)",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "cxxopts",
+                    "version": "2.2.1",
+                    "version_op": null,
+                    "extractor_type": "cmake::cpm",
+                    "context": "cpmaddpackage(\n  github_repository jarro2783/cxxopts\n  version 2.2.1\n  options \"cxxopts_build_examples no\" \"cxxopts_build_tests no\" \"cxxopts_enable_install yes\"\n)",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "lua",
+                    "version": "5.3.5",
+                    "version_op": null,
+                    "extractor_type": "cmake::cpm",
+                    "context": "cpmaddpackage(\n  name lua\n  git_repository https://github.com/lua/lua.git\n  version 5.3.5\n  download_only yes\n)",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "catch2",
+                    "version": "2.5.0",
+                    "version_op": null,
+                    "extractor_type": "cmake::cpm",
+                    "context": "cpmaddpackage(\"gh:catchorg/catch2@2.5.0\")",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                }
+            ],
+            "package_manager": {
+                "package_manager": "cmake",
+                "language": "c",
+                "working_dir": "",
+                "running_mode": ""
+            },
+            "type": "user_module"
+        },
+        {
+            "artifact_id": "tests/test_data/bazel.build",
+            "group_id": "",
+            "version": "",
+            "dependencies": [
+                {
+                    "artifact_id": "common",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "bazel",
+                    "context": "tests/test_data/bazel.build",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "hello-greet",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "bazel",
+                    "context": "tests/test_data/bazel.build:\":hello-greet\"",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "hello-greet",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "bazel",
+                    "context": "tests/test_data/bazel.build:\":hello-greet\"",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "hello-time",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "bazel",
+                    "context": "tests/test_data/bazel.build:\"//lib:hello-time\"",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                }
+            ],
+            "package_manager": {
+                "package_manager": "bazel",
+                "language": "c",
+                "working_dir": "",
+                "running_mode": ""
+            },
+            "type": "user_module"
+        },
+        {
+            "artifact_id": "tests/test_data",
+            "group_id": "",
+            "version": "",
+            "dependencies": [
+                {
+                    "artifact_id": "krb5",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "gitsubmod",
+                    "context": "tests/test_data",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "engine",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "gitsubmod",
+                    "context": "tests/test_data",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "oqs-provider",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "gitsubmod",
+                    "context": "tests/test_data",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                }
+            ],
+            "package_manager": {
+                "package_manager": "gitsubmod",
+                "language": "c",
+                "working_dir": "",
+                "running_mode": ""
+            },
+            "type": "user_module"
+        },
+        {
+            "artifact_id": "tests/test_data/pthread.vcxproj",
+            "group_id": "",
+            "version": "",
+            "dependencies": [
+                {
+                    "artifact_id": "ws2_32",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "ms",
+                    "context": "tests/test_data/pthread.vcxproj",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "ws2_32",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "ms",
+                    "context": "tests/test_data/pthread.vcxproj",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "ws2_32",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "ms",
+                    "context": "tests/test_data/pthread.vcxproj",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "ws2_32",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "ms",
+                    "context": "tests/test_data/pthread.vcxproj",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "ws2_32",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "ms",
+                    "context": "tests/test_data/pthread.vcxproj",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "ws2_32",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "ms",
+                    "context": "tests/test_data/pthread.vcxproj",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "ws2_32",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "ms",
+                    "context": "tests/test_data/pthread.vcxproj",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "ws2_32",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "ms",
+                    "context": "tests/test_data/pthread.vcxproj",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                }
+            ],
+            "package_manager": {
+                "package_manager": "ms",
+                "language": "c",
+                "working_dir": "",
+                "running_mode": ""
+            },
+            "type": "user_module"
+        },
+        {
+            "artifact_id": "tests/test_data/manifest",
+            "group_id": "",
+            "version": "",
+            "dependencies": [
+                {
+                    "artifact_id": "build2",
+                    "version": ">= 0.14.0-",
+                    "version_op": null,
+                    "extractor_type": "build2",
+                    "context": "tests/test_data/manifest",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "bpkg",
+                    "version": ">= 0.14.0-",
+                    "version_op": null,
+                    "extractor_type": "build2",
+                    "context": "tests/test_data/manifest",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "odb",
+                    "version": "[2.5.0-b.22.1 2.5.0-b.23)",
+                    "version_op": null,
+                    "extractor_type": "build2",
+                    "context": "tests/test_data/manifest",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "odb-sqlite",
+                    "version": "[2.5.0-b.22.1 2.5.0-b.23)",
+                    "version_op": null,
+                    "extractor_type": "build2",
+                    "context": "tests/test_data/manifest",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "sqlite3",
+                    "version": "^3.21.0 ; ATTACH in transaction",
+                    "version_op": null,
+                    "extractor_type": "build2",
+                    "context": "tests/test_data/manifest",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "butl",
+                    "version": "[0.15.0-a.0.1 0.15.0-a.1)",
+                    "version_op": null,
+                    "extractor_type": "build2",
+                    "context": "tests/test_data/manifest",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "bpkg",
+                    "version": "[0.15.0-a.0.1 0.15.0-a.1)",
+                    "version_op": null,
+                    "extractor_type": "build2",
+                    "context": "tests/test_data/manifest",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "build2",
+                    "version": "[0.15.0-a.0.1 0.15.0-a.1)",
+                    "version_op": null,
+                    "extractor_type": "build2",
+                    "context": "tests/test_data/manifest",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                }
+            ],
+            "package_manager": {
+                "package_manager": "build2",
+                "language": "c",
+                "working_dir": "",
+                "running_mode": ""
+            },
+            "type": "user_module"
+        },
+        {
+            "artifact_id": "tests/test_data/CMakeLists.txt",
+            "group_id": "",
+            "version": "",
+            "dependencies": [
+                {
+                    "artifact_id": "powershell",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "cmake",
+                    "context": "find_package(powershell required)",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "qt5core",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "cmake",
+                    "context": "find_package(qt5core ${qt_find_package_options})",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "${package}",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "cmake",
+                    "context": "find_package(${package} ${${package}_options})",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "${package}",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "cmake",
+                    "context": "find_package(${package})",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "msvc_redist",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "cmake",
+                    "context": "find_package( msvc_redist )",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "nsis",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "cmake",
+                    "context": "find_package( nsis )",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "wix",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "cmake",
+                    "context": "find_package( wix )",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "portableapps",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "cmake",
+                    "context": "find_package( portableapps )",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "wireshark",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "cmake",
+                    "context": "project(wireshark c cxx)",
+                    "confidence": "",
+                    "type": "dependency",
+                    "dependencies": []
+                }
+            ],
+            "package_manager": {
+                "package_manager": "cmake",
+                "language": "c",
+                "working_dir": "",
+                "running_mode": ""
+            },
+            "type": "user_module"
+        },
+        {
+            "artifact_id": "tests/test_data/meson.build",
+            "group_id": "",
+            "version": "",
+            "dependencies": [
+                {
+                    "artifact_id": "drm",
+                    "version": "2.4.60",
+                    "version_op": ">=",
+                    "extractor_type": "meson",
+                    "context": "tests/test_data/meson.build",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "x11",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "meson",
+                    "context": "tests/test_data/meson.build",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "xext",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "meson",
+                    "context": "tests/test_data/meson.build",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "xfixes",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "meson",
+                    "context": "tests/test_data/meson.build",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "gl",
+                    "version": null,
+                    "version_op": null,
+                    "extractor_type": "meson",
+                    "context": "tests/test_data/meson.build",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                },
+                {
+                    "artifact_id": "wayland-client",
+                    "version": "1.11.0",
+                    "version_op": ">=",
+                    "extractor_type": "meson",
+                    "context": "tests/test_data/meson.build",
+                    "confidence": "High",
+                    "type": "dependency",
+                    "dependencies": []
+                }
+            ],
+            "package_manager": {
+                "package_manager": "meson",
+                "language": "c",
+                "working_dir": "",
+                "running_mode": ""
+            },
+            "type": "user_module"
+        }
+    ]
+}

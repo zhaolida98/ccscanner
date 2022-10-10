@@ -8,7 +8,7 @@ sys.path.append(os.path.join(file_dir, '..'))
 sys.path.insert(0, os.getcwd())
 import argparse
 
-from ccscanner.utils.utils import read_txt, save_js
+from ccscanner.utils.utils import extractors2deptree, read_txt, save_js
 from ccscanner.extractors.conan_extractor import ConanExtractor
 from ccscanner.extractors.control_extractor import ControlExtractor
 from ccscanner.extractors.cmake_extractor import CmakeExtractor
@@ -27,11 +27,7 @@ from ccscanner.extractors.dds_extractor import DdsExtractor
 # from ccscanner.extractors.buck_extractor import BuckExtractor
 from ccscanner.extractors.build2_extractor import Build2Extractor
 
-parser = argparse.ArgumentParser()
-parser.add_argument('-d', type=str, default='',
-        help='set directory to scan')
-parser.add_argument('-t', type=str, default='results.json',
-        help='save results to file')
+
 
 CONF_FILES = ['configure', 'configure.in', 'configure.ac']
 logging.basicConfig()
@@ -120,10 +116,16 @@ class scanner(object):
                     logger.error(e)
 
     def to_dict(self):
-        return json.loads(json.dumps(self, default=lambda o: o.__dict__))
+        deptree = extractors2deptree(self.extractors, self.target)
+        return deptree
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-d', type=str, default='.',
+            help='set directory to scan')
+    parser.add_argument('-t', type=str, default='results.json',
+            help='save results to file')
     args = parser.parse_args()
     target = args.d
     save_file = args.t

@@ -36,4 +36,11 @@ class Dependency(object):
         return self.library, self.version
 
     def to_dict(self):
-        return json.loads(json.dumps(self, default=lambda o: o.__dict__))
+        return {
+            'artifact_id': self.unified_name, 
+            'version': self.version,
+            'version_op': self.version_op, 
+            'extractor_type': self.extractor_type, 
+            'context': self.context, 
+            'confidence': self.confidence
+            }

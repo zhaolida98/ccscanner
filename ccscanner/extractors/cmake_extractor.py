@@ -61,7 +61,7 @@ class CmakeExtractor(Extractor):
 
 
     def to_dict(self):
-        return {'deps': self.deps, 'type': self.type, 'libs': self.libs_found}
+        return {'deps': self.deps, 'type': self.type, 'libs': self.libs_found, 'target': self.target}
 
 
     def run_extractor(self):

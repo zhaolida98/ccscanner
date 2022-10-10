@@ -10,6 +10,58 @@ from bs4 import BeautifulSoup
 logging.basicConfig()
 logger = logging.getLogger(__name__)
 
+class DependencyTree:
+    def __init__(self, scan_name) -> None:
+        self.scan_name = scan_name
+        self.projects = []
+    
+    def add_project(self, project):
+        self.projects.append(project)
+
+    def to_dict(self):
+        return {'scan_name': self.scan_name, 'projects': self.projects}
+
+class Project:
+    def __init__(self, artifact_id, group_id, version, type='user_module') -> None:
+        self.artifact_id = artifact_id
+        self.group_id = group_id
+        self.version = version
+        self.dependencies = []
+        self.package_manager = {
+            "package_manager": "",
+            "language": "",
+            "working_dir": "",
+            "running_mode": "",
+        }
+        self.type = type
+        self.deps = []
+    
+    def add_dependency(self, dep):
+        self.deps.append(dep)
+
+    def to_dict(self):
+        return {
+            'artifact_id': self.artifact_id, 
+            'group_id': self.group_id, 
+            'version': self.version, 
+            'dependencies': self.deps, 
+            'package_manager': self.package_manager, 
+            'type': self.type
+            }
+
+def extractors2deptree(extractors, target):
+    deptree = DependencyTree(scan_name=target)
+    for extractor in extractors:
+        project = Project(artifact_id=extractor['target'], group_id='', version='')
+        project.package_manager['package_manager'] = extractor['type']
+        project.package_manager['language'] = 'c'
+        for dep in extractor['deps']:
+            dep['type'] = 'dependency'
+            dep['dependencies'] = []
+            project.add_dependency(dep)
+        deptree.add_project(project.to_dict())
+    return deptree.to_dict()
+ 
 
 def save_js(content, path):
     with open(path, 'w') as save_f:

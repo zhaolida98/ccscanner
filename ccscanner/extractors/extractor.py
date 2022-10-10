@@ -7,6 +7,7 @@ class Extractor(object):
         super().__init__()
         self.deps = []
         self.type = ''
+        self.target = ''
 
     def add_dependency(self, dep):
         self.deps.append(dep.to_dict())
@@ -18,4 +19,4 @@ class Extractor(object):
         logging.info("start running extractor...")
 
     def to_dict(self):
-        return {'deps': self.deps, 'type': self.type}
+        return {'deps': self.deps, 'type': self.type, 'target': self.target}

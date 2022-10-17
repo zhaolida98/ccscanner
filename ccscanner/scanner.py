@@ -36,7 +36,7 @@ logger = logging.getLogger(__name__)
 
 class scanner(object):
     def __init__(self, dir_target) -> None:
-        self.target = dir_target
+        self.target = os.path.abspath(dir_target)
         self.extractors = []
         self.scan()
 
@@ -122,7 +122,7 @@ class scanner(object):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('-d', type=str, default='.',
+    parser.add_argument('-d', type=str, default=os.getcwd(),
             help='set directory to scan')
     parser.add_argument('-t', type=str, default='results.json',
             help='save results to file')
